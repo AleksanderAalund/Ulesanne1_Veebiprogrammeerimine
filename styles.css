@@ -1,0 +1,42 @@
+:root {
+  --site-max-width: 1140px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+header .container,
+main.container,
+footer .container {
+  max-width: var(--site-max-width);
+}
+
+@media (max-width: 576px) {
+  header {
+    text-align: center;
+  }
+
+  header .display-6 {
+    font-size: 1.75rem;
+  }
+
+  header .lead {
+    font-size: 1rem;
+  }
+
+  main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card .btn,
+  .btn[type="submit"] {
+    width: 100%;
+  }
+
+  .form-control,
+  .btn {
+    min-height: 44px;
+  }
+}
